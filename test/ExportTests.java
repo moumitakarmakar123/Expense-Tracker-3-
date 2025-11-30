@@ -78,7 +78,7 @@ public class ExportTests {
         assertEquals(ExportConstants.FILE_HEADERS, lines.get(0));
         // Amounts should be formatted to two decimals
         assertTrue(lines.get(1).contains(",12.50,"));
-        assertTrue(lines.get(2).contains(",07.00,") || lines.get(2).contains(",7.00,"));
+        assertTrue(lines.get(2).contains(",7.00,"));
     }
 
     @Test
@@ -102,4 +102,3 @@ public class ExportTests {
         assertTrue(msg.startsWith(ExportConstants.ERROR_IN_EXPORT));
     }
 }
-
